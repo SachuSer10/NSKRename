@@ -20,8 +20,8 @@ async def start(client, message):
         InlineKeyboardButton('𝐒𝐍𝐊 𝐁𝐎𝐓𝐙', url='https://t.me/PYRO_BOTZ'),
         InlineKeyboardButton('𝐒𝐔𝐏𝐏𝐎𝐑𝐓', url='https://t.me/PYRO_BOTZ_CHAT')
         ],[
-        InlineKeyboardButton('𝐀𝐁𝐎𝐔𝐓', callback_data='about'),
-        InlineKeyboardButton('𝐅𝐄𝐀𝐓𝐔𝐑𝐄𝐒', callback_data='help')
+        InlineKeyboardButton('𝐅𝐄𝐀𝐓𝐔𝐑𝐄𝐒', callback_data='help'),
+        InlineKeyboardButton('𝐀𝐁𝐎𝐔𝐓', callback_data='about')
         ]])
     if START_PIC:
         await message.reply_photo(START_PIC, caption=txt, reply_markup=button)       
@@ -57,13 +57,11 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=f"""👋𝑯𝑬𝒀, {user.mention}\n𝙄'𝙢 𝘼 𝙋𝙤𝙬𝙚𝙧𝙛𝙪𝙡𝙡 𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝙁𝙞𝙡𝙚 & 𝙑𝙞𝙙𝙚𝙤 𝙍𝙚𝙣𝙖𝙢𝙚 𝘽𝙤𝙩 𝙒𝙞𝙩𝙝 𝘾𝙪𝙨𝙩𝙤𝙢 𝘾𝙖𝙥𝙩𝙞𝙤𝙣 𝘼𝙣𝙙 𝙋𝙚𝙧𝙢𝙖𝙣𝙖𝙣𝙩 𝙏𝙝𝙪𝙢𝙗𝙣𝙖𝙞𝙡 𝙎𝙪𝙥𝙥𝙤𝙧𝙩.""",
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton("👼 𝙳𝙴𝚅𝚂 👼", callback_data='dev')                
+                InlineKeyboardButton('𝐒𝐍𝐊 𝐁𝐎𝐓𝐙', url='https://t.me/PYRO_BOTZ'),
+                InlineKeyboardButton('𝐒𝐔𝐏𝐏𝐎𝐑𝐓', url='https://t.me/PYRO_BOTZ_CHAT')
                 ],[
-                InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/PYRO_BOTZ'),
-                InlineKeyboardButton('🍂 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/PYRO_BOTZ_CHAT')
-                ],[
-                InlineKeyboardButton('🍃 𝙰𝙱𝙾𝚄𝚃', callback_data='about'),
-                InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿', callback_data='help')
+                InlineKeyboardButton('𝐅𝐄𝐀𝐓𝐔𝐑𝐄𝐒', callback_data='help'),
+                InlineKeyboardButton('𝐀𝐁𝐎𝐔𝐓', callback_data='about')
                 ]]
                 )
             )
