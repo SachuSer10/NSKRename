@@ -68,16 +68,9 @@ async def cb_handler(client, query: CallbackQuery):
     elif data == "help":
         await query.message.edit_text(
             text=mr.HELP_TXT,
-            reply_markup=InlineKeyboardMarkup( [[
-               InlineKeyboardButton("❣️ 𝚂𝙾𝚄𝚁𝙲𝙴", url="https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT")
-               ],[
-               InlineKeyboardButton("❤️‍🔥 𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴  ❤️‍🔥", url='https://youtu.be/BiC66uFJsio')
-               ],[
-               InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
-               InlineKeyboardButton("◀️ 𝙱𝙰𝙲𝙺", callback_data = "start")
-               ]]
-            )
-        )
+            reply_markup=InlineKeyboardMarkup(buttons)
+                await query.answer("⚠ ᴛᴜᴛᴏʀɪᴀʟ ⚠\n\nᴍᴀᴛᴛᴇʀ\n\n©ɴsᴋ ʙᴏᴛᴢ", show_alert=True)
+  
     elif data == "about":
         await query.message.edit_text(
             text=mr.ABOUT_TXT.format(client.mention),
